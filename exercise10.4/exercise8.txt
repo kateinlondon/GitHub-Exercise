@@ -1,0 +1,49 @@
+Part I 
+<!-- Step 1 - Create a local repository and add and commit some files -->
+
+# Step 1.1: Create a new folder for your project
+mkdir my-github-project
+
+# Step 1.2: Move into the folder
+cd my-github-project
+
+# Step 1.3: Initialize a new git repository
+git init
+
+# Step 1.4: Create a new file
+echo "Hello GitHub!" > readme.md
+
+# Step 1.5: Add the file to the staging area
+git add readme.md
+
+# Step 1.6: Commit the file
+git commit -m "Initial commit - added readme file"
+
+
+<!-- Step 2 - Create a remote repository and push your code from the local repo to the remote -->
+
+# Step 2.1: Create a new repository on GitHub (do this on the GitHub website)
+
+# Step 2.2: Link your local repo to the remote repo
+git remote add origin https://github.com/your-username/your-repository-name.git
+
+# Step 2.3: Push your code to GitHub
+git push -u origin main
+
+
+<!-- Step 3 - Create a local branch and add and commit some files -->
+# Step 3.1: Create and switch to a new branch
+git checkout -b feature-branch
+
+# Step 3.2: Create a new file or edit an existing file
+echo "New feature coming!" > feature.txt
+
+# Step 3.3: Add and commit the new file
+git add feature.txt
+git commit -m "Added feature file"
+
+<!-- Step 4 - Push that local branch to GitHub to create a remote branch -->
+# Step 4.1: Push the branch to GitHub
+git push -u origin feature-branch
+
+
